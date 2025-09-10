@@ -74,7 +74,7 @@ const EmployeeList = ({ searchTerm }) => {
                 <td className="py-2 px-4">
                   <div className="flex gap-2 items-center">
                     <img
-                      src={employee.profileImg || "/image.jpg"}
+                      src={employee.profileImg || "/EMS-frontend/image.jpg"}
                       alt=""
                       className="object-cover rounded-full w-[50px] h-[50px]"
                     />

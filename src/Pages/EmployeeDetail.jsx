@@ -24,7 +24,7 @@ const EmployeeDetail = () => {
 
   return (
     <div className="py-9 px-4 sm:px-7 w-full min-h-screen">
-      {/* Header */}
+    
       <div className="flex gap-3 items-center mb-7">
         <Link to="/employee">
           <IoChevronBackSharp size={30} className="sm:hidden" />

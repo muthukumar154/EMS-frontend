@@ -38,7 +38,7 @@ const Header = ({ onMenuClick }) => {
       </div>
 
       <div className="flex items-center gap-3 md:gap-5 px-4 md:px-8">
-        {/* Hamburger menu (mobile only) */}
+      
         <button
           onClick={onMenuClick}
           className="md:hidden p-2 rounded-lg border border-gray-300"
@@ -50,7 +50,7 @@ const Header = ({ onMenuClick }) => {
           <IoSettingsOutline size={20} />
         </div>
 
-        {/* Notifications */}
+      
         <div className="hidden md:flex w-10 h-10 md:w-11 md:h-11 bg-[#e3e3e3] rounded-full justify-center items-center cursor-pointer">
           <FaRegBell size={20} />
         </div>
@@ -68,7 +68,7 @@ const Header = ({ onMenuClick }) => {
               />
             ) : (
               <img
-                src="/image.jpg"
+                src="/EMS-frontend/image.jpg"
                 alt="default"
                 className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover"
               />

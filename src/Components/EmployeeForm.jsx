@@ -28,7 +28,7 @@ const EmployeeForm = ({
       <div className="flex-col">
         <div className="relative w-[100px] h-[100px] md:w-[130px] md:h-[130px] mb-5">
           <img
-            src={preview || "/profile.webp"}
+            src={preview || "/EMS-frontend/profile.webp"}
             alt="profile"
             className="w-full h-full rounded-lg object-cover"
           />
