@@ -172,7 +172,7 @@ const EmployeeList = ({ searchTerm }) => {
       </div>
 
       {confirmOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-opacity-40 z-50">
           <div className="bg-white rounded-lg p-6 shadow-lg w-[320px] text-center">
             <div className="flex justify-center mb-4">
               <AiOutlineDelete className="text-blue-500" size={48} />
