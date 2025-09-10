@@ -2,25 +2,25 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from 'axios';
 
 export const fetchEmployees = createAsyncThunk('employees/fetchEmployees', async () => {
-    const res = await axios.get('http://localhost:9000/api/employee');
+    const res = await axios.get('https://ems-backend-5kvw.onrender.com/api/employee');
     return res.data;
 });
 
 export const getEmployee = createAsyncThunk('employee/getEmployee', async (id) => {
-    const res = await axios.get(`http://localhost:9000/api/employee/${id}`);
+    const res = await axios.get(`https://ems-backend-5kvw.onrender.com/api/employee/${id}`);
     console.log(res.data);
 
     return res.data;
 })
 
 export const deleteEmployee = createAsyncThunk('employee/deleteEmployee', async (id) => {
-    const res = await axios.delete(`http://localhost:9000/api/employee/${id}`);
+    const res = await axios.delete(`https://ems-backend-5kvw.onrender.com/api/employee/${id}`);
     return id;
 })
 
 export const addEmployee = createAsyncThunk("employee/addEmployee", async (formData, { rejectWithValue }) => {
     try {
-        const res = await axios.post("http://localhost:9000/api/employee", formData, {
+        const res = await axios.post("https://ems-backend-5kvw.onrender.com/api/employee", formData, {
             headers:
             {
                 "Content-Type": "multipart/form-data"
@@ -41,7 +41,7 @@ export const addEmployee = createAsyncThunk("employee/addEmployee", async (formD
 
 export const updateEmployee = createAsyncThunk("employee/updateEmployee", async ({ id, formData }, { rejectWithValue }) => {
     try {
-        const res = await axios.put(`http://localhost:9000/api/employee/${id}`,
+        const res = await axios.put(`https://ems-backend-5kvw.onrender.com/api/employee/${id}`,
             formData,
             {
                 headers: { "Content-Type": "multipart/form-data" },
